@@ -1,0 +1,34 @@
+static int smallerElements(int a[], int n, int k){
+        //Enter your code here
+       // applying binary search 
+       //TC: O(log N) 
+       //Auther: Amarjeet
+        int cnt = 0;
+        int low=0;
+        int mid= 0;
+        int high= n-1;
+        while(low<=high){
+                mid = low+ (high-low)/2;// calculate mid
+                
+                if(a[mid]<=k){
+                        cnt = mid+1;
+                        low= mid+1;
+                }
+                else 
+                        high = mid-1;
+                
+        }
+        /*
+        // brute force  or linear search
+        // TC= O(N)
+        for(int i= 0; i< n; i++){
+                if(a[i]<=k){
+                        cnt++;      
+                }
+                
+        }
+        return cnt;
+
+        */
+        return cnt;
+}

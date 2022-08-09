@@ -1,0 +1,28 @@
+import java.io.*; // for handling input/output
+import java.util.*; // contains Collections framework
+
+// don't change the name of this class
+// you can add inner classes if needed
+class Main {
+	 public static int gcd(int a, int b)
+    {
+      if (b == 0)
+        return a;
+      return gcd(b, a % b);
+    }
+	public static void check(int x, int y, int n){
+		int p= gcd(x,y);
+		if(n%p==0)
+			System.out.print("YES");
+		else
+			System.out.print("NO");
+	} 
+	public static void main (String[] args) {
+                      // Your code here
+		Scanner sc= new Scanner(System.in);
+		int x= sc.nextInt();
+		int y= sc.nextInt();
+		int n= sc.nextInt();
+		check(x,y,n);
+	}
+}

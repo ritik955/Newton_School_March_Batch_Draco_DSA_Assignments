@@ -1,0 +1,19 @@
+import java.io.*; // for handling input/output
+import java.util.*; // contains Collections framework
+
+// don't change the name of this class
+// you can add inner classes if needed
+class Main {
+	public static void main (String[] args) {
+						  Scanner sc = new Scanner(System.in);
+					  String s = sc.next();
+					  if(s.contains("111") || s.contains("222") ||s.contains("333") ||
+					   s.contains("444") || s.contains("555") || s.contains("666") ||
+					    s.contains("777") || s.contains("888") || s.contains("999") || s.contains("000")){
+						  System.out.print("Awesome");
+					  }
+					  else {
+						  System.out.print("Good");
+					  }
+	}
+	}

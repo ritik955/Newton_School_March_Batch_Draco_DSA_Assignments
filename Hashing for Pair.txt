@@ -1,0 +1,50 @@
+import java.io.*; // for handling input/output
+import java.util.*; // contains Collections framework
+
+// don't change the name of this class
+// you can add inner classes if needed
+class Main {
+	public static void main (String[] args) {
+                      // Your code here
+		Scanner sc = new Scanner(System.in);
+		int tc = sc.nextInt();
+
+		int i, n, key, j,k,l,m,count;
+
+		for (i = 0; i < tc; i++) {
+
+			n = sc.nextInt();
+			key = sc.nextInt();
+			int arr[] = new int[n];
+
+			for (j = 0; j < n; j++)
+				arr[j] = sc.nextInt();
+
+			Arrays.sort(arr);
+
+
+			
+			l=0;
+			m=n-1;
+			count=0;
+			while(l<m){
+				if(arr[l]+arr[m]>key){
+					m--;
+				}else if(arr[l]+arr[m]<key){
+					l++;
+				}else{
+					l++;
+					m--;
+					count++;
+				}
+			}
+
+			if(count>0){
+				System.out.println("1");
+			}else{
+				System.out.println("0");
+			}
+
+		}
+	}
+}

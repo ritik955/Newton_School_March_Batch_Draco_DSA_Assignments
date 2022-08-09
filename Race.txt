@@ -1,0 +1,12 @@
+static char Race(int A,int B,int C){
+//Enter your code here
+int x,y;
+ x= (C-A)>0 ? (C-A) : (A-C); y=(C-B)>0 ?(C-B) : (B-C);
+if(x<y){
+    return 'N' ;
+}else if(x>y){
+    return 'S';
+} else{
+    return 'D';
+}
+}

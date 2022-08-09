@@ -1,0 +1,22 @@
+import java.io.*; // for handling input/output
+import java.util.*; // contains Collections framework
+
+// don't change the name of this class
+// you can add inner classes if needed
+class Main {
+	public static void main (String[] args) {
+		Scanner sc=new Scanner(System.in);
+		       
+                  int myNum = sc.nextInt(); 
+				long myLongNum =sc.nextLong();     
+                float myFloatNum = sc.nextFloat(); 
+				double myDoubleNum = sc.nextDouble();   
+                char myLetter = sc.next().charAt(0);    
+				System.out.println(myNum);     
+                System.out.println(myLongNum);
+				System.out.println(myFloatNum);
+				System.out.println(myDoubleNum);
+				System.out.println(myLetter);
+
+}
+}
